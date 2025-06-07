@@ -17,12 +17,14 @@
       font-family: 'Montserrat', sans-serif;
       color: var(--dark-text);
       background: var(--light-bg);
+      line-height: 1.6;
     }
     header {
       background: linear-gradient(135deg, var(--burnt-orange), var(--accent-color));
       color: white;
       padding: 3rem 1rem;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     header h1 {
       font-family: 'Space Mono', monospace;
@@ -46,10 +48,17 @@
     nav a:hover {
       transform: rotate(-2deg);
     }
-    section {
-      padding: 3rem 1rem;
+    main {
+      padding: 2rem 1rem;
       max-width: 900px;
       margin: 0 auto;
+    }
+    section {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
     }
     section h2 {
       font-family: 'Space Mono', monospace;
@@ -77,21 +86,23 @@
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Aditya, currently studying at the University of Texas at Austin. I enjoy creating web experiences that mix clean design with a touch of quirk.</p>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Aditya, currently studying at the University of Texas at Austin. I enjoy creating web experiences that mix clean design with a touch of quirk.</p>
+    </section>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Here are a few of my recent projects. More coming soon!</p>
-    <!-- Portfolio items can be added here -->
-  </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Here are a few of my recent projects. More coming soon!</p>
+      <!-- Portfolio items can be added here -->
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Reach out via <a href="mailto:aditya@example.com">email</a> or connect with me on social media.</p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach out via <a href="mailto:aditya@example.com">email</a> or connect with me on social media.</p>
+    </section>
+  </main>
 
   <footer>
     &copy; 2025 Aditya Kasarla
