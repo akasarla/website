@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>My First Site</title>
-  </head>
-  <body>
-    <h1>Hello, world.</h1>
-    <p>This is my first Git-tracked website.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Kasarla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #2b2b2b;
+      --text: #f0f0f0;
+      --muted: #666;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .post {
+      border-top: 1px solid var(--muted);
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aditya Kasarla</h1>
+  </header>
+  <main>
+    <section id="about">
+      <p>I'm a UT Austin student exploring web development and design. This site will host notes and projects as I learn.</p>
+    </section>
+    <section id="blog">
+      <h2>Blog</h2>
+      <div class="post">
+        <h3>First Post</h3>
+        <p>Coming soon...</p>
+      </div>
+      <div class="post">
+        <h3>Second Post</h3>
+        <p>Coming soon...</p>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
