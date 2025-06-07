@@ -12,6 +12,9 @@
       --light-bg: #f9f8f6;
       --dark-text: #333;
     }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -47,9 +50,10 @@
       color: white;
       text-decoration: none;
       font-weight: 700;
-      transition: transform 0.2s ease;
+      transition: color 0.2s ease, transform 0.2s ease;
     }
     nav a:hover {
+      color: var(--light-bg);
       transform: translateY(-3px) rotate(-2deg);
     }
     main {
@@ -75,6 +79,7 @@
       padding: 2rem 1rem;
       background: var(--accent-color);
       color: white;
+      border-top: 4px solid var(--burnt-orange);
     }
   </style>
 </head>
@@ -116,4 +121,5 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
