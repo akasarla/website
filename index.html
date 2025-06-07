@@ -3,18 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Aditya Kasarla - UT Austin Student</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Space+Mono&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --burnt-orange: #bf5700;
-      --accent-color: #4b0082;
-      --light-bg: #f9f8f6;
-      --dark-text: #333;
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono&display=swap" rel="stylesheet">
+      --bg: #1b1b1b;
+      --text: #f2f2f2;
+      --accent: #bf5700;
+      --muted: #777;
     }
-    body {
-      margin: 0;
+    html {
+      scroll-behavior: smooth;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--accent), #672400);
+      padding: 3rem 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      font-size: 3rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      flex: 1;
+      max-width: 750px;
+      padding: 2rem 1rem;
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      font-family: 'Space Mono', monospace;
+      color: var(--accent);
+      margin-top: 0;
+    }
+    .post + .post {
+      margin-top: 1rem;
+    }
+    a {
+      color: var(--accent);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+      <p>Hey! I'm Aditya, a UT Austin student who loves experimenting with web design. Expect quick notes, side projects, and some burnt-orange flair.</p>
+  <footer>&copy; <span id="year"></span> Aditya Kasarla</footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
       font-family: 'Montserrat', sans-serif;
       color: var(--dark-text);
       background: var(--light-bg);
