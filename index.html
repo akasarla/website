@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>My First Site</title>
-  </head>
-  <body>
-    <h1>Hello, world.</h1>
-    <p>This is my first Git-tracked website.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe - Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #3498db;
+      --secondary-color: #2c3e50;
+      --light-color: #ecf0f1;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: var(--secondary-color);
+      background: var(--light-color);
+    }
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav li {
+      margin: 0 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--secondary-color);
+      color: var(--light-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>John Doe</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a web developer who loves building simple, elegant websites.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Check out some of my projects below.</p>
+    <!-- Add portfolio items later -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out via <a href="mailto:john@example.com">email</a>.</p>
+  </section>
+
+  <footer>
+    &copy; 2023 John Doe
+  </footer>
+</body>
 </html>
