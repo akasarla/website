@@ -18,6 +18,9 @@
       color: var(--dark-text);
       background: var(--light-bg);
       line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
       background: linear-gradient(135deg, var(--burnt-orange), var(--accent-color));
@@ -30,6 +33,7 @@
       font-family: 'Space Mono', monospace;
       font-size: 2.5rem;
       margin: 0 0 0.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     nav ul {
       list-style: none;
@@ -46,9 +50,10 @@
       transition: transform 0.2s ease;
     }
     nav a:hover {
-      transform: rotate(-2deg);
+      transform: translateY(-3px) rotate(-2deg);
     }
     main {
+      flex: 1;
       padding: 2rem 1rem;
       max-width: 900px;
       margin: 0 auto;
@@ -105,7 +110,10 @@
   </main>
 
   <footer>
-    &copy; 2025 Aditya Kasarla
+    &copy; <span id="year"></span> Aditya Kasarla
   </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
