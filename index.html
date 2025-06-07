@@ -3,63 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aditya Kasarla</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>Aditya Kasarla - UT Austin Student</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Space+Mono&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #2b2b2b;
-      --text: #f0f0f0;
-      --muted: #666;
+      --burnt-orange: #bf5700;
+      --accent-color: #4b0082;
+      --light-bg: #f9f8f6;
+      --dark-text: #333;
     }
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      font-family: 'Montserrat', sans-serif;
+      color: var(--dark-text);
+      background: var(--light-bg);
       line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
+      background: linear-gradient(135deg, var(--burnt-orange), var(--accent-color));
+      color: white;
+      padding: 3rem 1rem;
       text-align: center;
-      padding: 2rem 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     header h1 {
-      margin: 0;
+      font-family: 'Space Mono', monospace;
       font-size: 2.5rem;
-      font-weight: 600;
+      margin: 0 0 0.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s ease;
+    }
+    nav a:hover {
+      transform: translateY(-3px) rotate(-2deg);
     }
     main {
-      max-width: 700px;
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 0 1rem;
     }
     section {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       margin-bottom: 2rem;
     }
-    .post {
-      border-top: 1px solid var(--muted);
-      padding-top: 1rem;
+    section h2 {
+      font-family: 'Space Mono', monospace;
+      color: var(--burnt-orange);
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--accent-color);
+      color: white;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Aditya Kasarla</h1>
+
+    <p>UT Austin Student & Aspiring Developer</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
+
   <main>
     <section id="about">
-      <p>I'm a UT Austin student exploring web development and design. This site will host notes and projects as I learn.</p>
+      <h2>About Me</h2>
+      <p>Hello! I'm Aditya, currently studying at the University of Texas at Austin. I enjoy creating web experiences that mix clean design with a touch of quirk.</p>
     </section>
-    <section id="blog">
-      <h2>Blog</h2>
-      <div class="post">
-        <h3>First Post</h3>
-        <p>Coming soon...</p>
-      </div>
-      <div class="post">
-        <h3>Second Post</h3>
-        <p>Coming soon...</p>
-      </div>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Here are a few of my recent projects. More coming soon!</p>
+      <!-- Portfolio items can be added here -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach out via <a href="mailto:aditya@example.com">email</a> or connect with me on social media.</p>
     </section>
   </main>
+
+  <footer>
+    &copy; <span id="year"></span> Aditya Kasarla
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
